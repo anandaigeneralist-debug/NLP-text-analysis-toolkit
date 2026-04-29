@@ -1,0 +1,84 @@
+NLP Project: Text Similarity Analysis
+
+🔹 Overview
+This project implements a comprehensive Natural Language Processing (NLP) pipeline to measure text similarity at three levels: word, sentence, and document. It combines classical NLP techniques with modern deep learning models to provide accurate semantic similarity analysis.
+
+🔹 Objectives
+Compute word-level similarity using Edit Distance, WordNet, and Word2Vec
+Measure sentence-level similarity using Jaccard, TF-IDF, and SBERT
+Analyze document-level similarity using TF-IDF and Doc2Vec
+Build a unified pipeline for automatic similarity detection
+
+🔹 Technologies Used
+Python 3.x
+NLTK
+spaCy
+scikit-learn
+Sentence-Transformers (SBERT)
+Gensim (Doc2Vec)
+NumPy, Pandas
+Matplotlib, Seaborn
+
+🔹 Project Structure
+├── NLP.ipynb
+├── data/
+├── outputs/
+│   ├── sentence_similarity_heatmap.png
+│   ├── document_similarity_heatmap.png
+├── README.md
+🔹 Methods Implemented
+
+✅ Word Similarity
+Edit Distance (Lexical similarity)
+WordNet Path Similarity (Semantic)
+Word2Vec / GloVe (Contextual similarity)
+
+✅ Sentence Similarity
+Jaccard Similarity
+TF-IDF + Cosine Similarity
+SBERT Embeddings (Deep semantic similarity)
+
+✅ Document Similarity
+TF-IDF Vectorization
+Doc2Vec Embeddings
+SBERT (for semantic retrieval)
+
+🔹 Key Features
+Multi-level similarity analysis (word, sentence, document)
+Automatic method selection using pipeline
+Visualization using heatmaps
+Semantic search using SBERT
+
+🔹 Results & Insights
+Edit Distance is useful for spelling but fails for meaning
+WordNet captures lexical relationships but has limitations
+Word2Vec & SBERT provide strong semantic understanding
+SBERT performs best for sentence and document similarity tasks
+
+🔹 How to Run
+1. Install Dependencies
+pip install nltk spacy scikit-learn sentence-transformers gensim matplotlib seaborn
+2. Download Models
+python -m spacy download en_core_web_md
+python -m nltk.downloader wordnet punkt omw-1.4
+3. Run the Notebook
+jupyter notebook NLP.ipynb
+
+🔹 Applications
+Resume matching systems
+Chatbots and virtual assistants
+Plagiarism detection
+Semantic search engines
+Recommendation systems
+
+🔹 Future Improvements
+Integration with web applications (Flask/Streamlit)
+Use of transformer models like BERT/GPT
+Scaling with vector databases (FAISS)
+
+🔹 Author
+Anand CM
+AI & Data Science Enthusiast
+
+🔹 Conclusion
+This project demonstrates how different NLP techniques can be applied to measure similarity across various text levels. It highlights the evolution from basic lexical methods to advanced semantic models like SBERT, providing a strong foundation for real-world NLP applications.
